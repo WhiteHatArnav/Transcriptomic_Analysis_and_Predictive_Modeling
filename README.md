@@ -73,7 +73,7 @@ Generalized configuration-driven transcriptomic analysis pipeline developed from
 - National Cancer Institute Genomic Data Commons (GDC)
 - UCSC Xena Browser subtype annotations where applicable
 
-Raw TCGA datasets are not distributed within this repository and should be obtained directly from the original data providers.
+Raw TCGA datasets are not distributed within this repository and should be obtained directly from the original data providers using the sample ID list available in the base folder of this repository.
 
 ## Software Environment
 
