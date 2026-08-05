@@ -43,7 +43,7 @@ convert_ensembl_to_symbol <- function(file_path) {
   
   # Save output
   write_csv(merged, output_file)
-  message("✅ Saved: ", output_file)
+  message("Saved: ", output_file)
 }
 
 # Run conversion for all files
