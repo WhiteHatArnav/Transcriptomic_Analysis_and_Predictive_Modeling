@@ -1,0 +1,49 @@
+Loading lihc_black_survival_data.csv ...
+Total usable patients after survival cleanup: 5
+Total gene features before selection: 60660
+OS value counts:
+OS
+1.0    3
+0.0    2
+Name: count, dtype: int64
+Kaplan–Meier curve saved to /Users/arnavjoshi/Desktop/KFoldLassoCox/LIHCKFoldLassoCox/KM_LIHC_Black.png
+
+=== Fold 1/5 ===
+  Training samples: 4, Inner CV folds: 2
+  Fitting LASSO with 60s timeout...
+  LASSO status for this fold: ok
+  Fold 1: selected 31 features
+  Dropped 0 near-zero variance features.
+  Cox model converged.
+  Out-of-fold risk scores computed.
+
+=== Fold 2/5 ===
+  Training samples: 4, Inner CV folds: 2
+  Fitting LASSO with 60s timeout...
+  LASSO status for this fold: timeout
+  Skipping this fold (no usable LASSO result).
+
+=== Fold 3/5 ===
+  Training samples: 4, Inner CV folds: 2
+  Fitting LASSO with 60s timeout...
+  LASSO status for this fold: warn
+  LASSO produced convergence warning. Skipping this fold.
+
+=== Fold 4/5 ===
+  Training samples: 4, Inner CV folds: 2
+  Fitting LASSO with 60s timeout...
+  LASSO status for this fold: warn
+  LASSO produced convergence warning. Skipping this fold.
+
+=== Fold 5/5 ===
+  Training samples: 4, Inner CV folds: 2
+  Fitting LASSO with 60s timeout...
+  LASSO status for this fold: warn
+  LASSO produced convergence warning. Skipping this fold.
+
+Frequency threshold for stable features: 1 folds
+Risk scores saved to /Users/arnavjoshi/Desktop/KFoldLassoCox/LIHCKFoldLassoCox/LIHC_Black_KFold5_RiskScores.csv
+Feature summary saved to /Users/arnavjoshi/Desktop/KFoldLassoCox/LIHCKFoldLassoCox/LIHC_Black_KFold5_FeatureSelectionSummary.csv
+All unique features (with frequencies) saved to /Users/arnavjoshi/Desktop/KFoldLassoCox/LIHCKFoldLassoCox/LIHC_Black_KFold5_AllSelectedFeatures.csv
+Stable features saved to /Users/arnavjoshi/Desktop/KFoldLassoCox/LIHCKFoldLassoCox/LIHC_Black_KFold5_StableFeatures.csv
+Summary log saved to /Users/arnavjoshi/Desktop/KFoldLassoCox/LIHCKFoldLassoCox/LIHC_Black_KFold5_Log.txt

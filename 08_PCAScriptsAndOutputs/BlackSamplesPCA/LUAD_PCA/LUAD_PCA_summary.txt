@@ -1,0 +1,26 @@
+PCA / Synthetic Sample Guidance Summary (LUAD Cohort)
+--------------------------------------------------
+Number of real LUAD samples used (after QC): 25
+Number of genes (features) used after variance filter: 50541
+
+Explained variance by first 5 PCs (%):
+  PC1: 15.92%
+  PC2: 8.36%
+  PC3: 6.79%
+  PC4: 5.63%
+  PC5: 5.22%
+Cumulative variance (first 20 PCs): 91.81%
+
+Estimated number of clusters in LUAD samples (k-means elbow): 2
+Cluster sizes: {0: 13, 1: 12}
+Outlier fraction (>3 SD Mahalanobis): 0.00%
+
+Heuristic oversampling guidance:
+- We can plausibly generate up to ~1.25x total samples relative to our 25 real samples without overwhelming the covariance structure.
+- That corresponds to adding approximately 6 synthetic samples before the representation may start to distort.
+
+Interpretation notes:
+* If the PC1/PC2 plots show separation by OS or survival time, this suggests biologically meaningful axes of prognostic variation.
+* If multiple sub-clusters exist, oversampling should be done within each sub-cluster separately.
+* Outliers should be examined carefully before inclusion in data augmentation.
+* After augmentation, rerunning LASSO-Cox and verifying convergence and stability is essential.

@@ -1,0 +1,14 @@
+PRAD All Races – 10-Fold LASSO + Cox
+---------------------------------------------
+Total patients: 153
+Total genes pre-selection: 60660
+Unique features selected across folds: 21
+Frequency threshold for stability: 2
+Stable (high-frequency) features: 11
+
+Interpretation:
+* RiskScore_OutOfFold = Cox partial hazard for each patient from a model that did not train on that patient.
+* Times_Selected_Across_Folds reflects reproducibility of a gene being associated with event status.
+* High-frequency features are stronger survival-associated candidates.
+* Penalizer=0.1 is used in Cox for numerical stability.
+* 10-fold CV provides out-of-fold risk for all patients for fair comparison.

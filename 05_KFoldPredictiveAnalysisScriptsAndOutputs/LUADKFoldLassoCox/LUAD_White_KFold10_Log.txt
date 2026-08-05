@@ -1,0 +1,14 @@
+LUAD White Cohort – 10-Fold LASSO + Cox
+---------------------------------------------
+Total patients: 181
+Total genes pre-selection: 60660
+Unique features selected across folds: 129
+Frequency threshold for stability: 2
+Stable (high-frequency) features: 49
+
+Interpretation:
+* RiskScore_OutOfFold = Cox partial hazard for each patient from a model that did not train on that patient.
+* Times_Selected_Across_Folds reflects reproducibility of a gene being associated with event status.
+* High-frequency features are stronger survival-associated candidates.
+* Penalizer=0.1 is used in Cox for numerical stability.
+* 10-fold CV increases effective training fraction per model while still providing out-of-fold evaluation in LUAD White.

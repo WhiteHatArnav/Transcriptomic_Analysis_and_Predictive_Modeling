@@ -1,0 +1,11 @@
+PCA Summary (PRAD White)
+Samples after QC: 133
+Genes after variance filter: 54917
+Explained variance first 5 PCs (%):
+  PC1: 13.10
+  PC2: 5.71
+  PC3: 3.53
+  PC4: 2.91
+  PC5: 2.78
+Cumulative (first 20 PCs): 47.04%
+Outlier fraction: 1.50%

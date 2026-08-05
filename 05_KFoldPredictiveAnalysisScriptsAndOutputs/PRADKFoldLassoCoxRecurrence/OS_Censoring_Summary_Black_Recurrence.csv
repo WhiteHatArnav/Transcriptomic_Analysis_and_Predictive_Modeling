@@ -1,0 +1,10 @@
+Patient ID,biochemical_recurrence,days_to_first_biochemical_recurrence,OS.time,Recurrence_time_days,used_OS_time_as_censoring
+TCGA-HC-8258-11,0.0,,847.0,847.0,True
+TCGA-HC-8259-11,0.0,,924.0,924.0,True
+TCGA-KK-A5A1-01,0.0,,2469.0,2469.0,True
+TCGA-HC-8260-11,0.0,,686.0,686.0,True
+TCGA-EJ-7789-11,0.0,,1105.0,1105.0,True
+TCGA-KK-A59X-01,0.0,,2535.0,2535.0,True
+TCGA-G9-7523-01,0.0,,857.0,857.0,True
+TCGA-HC-7737-11,0.0,,1090.0,1090.0,True
+TCGA-HC-A4ZV-01,0.0,,23.0,23.0,True

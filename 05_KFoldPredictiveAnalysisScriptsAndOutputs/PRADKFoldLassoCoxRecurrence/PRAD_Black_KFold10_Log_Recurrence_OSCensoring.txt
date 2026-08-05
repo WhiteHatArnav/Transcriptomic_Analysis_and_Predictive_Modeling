@@ -1,0 +1,14 @@
+PRAD Black Cohort – 10-Fold LASSO + Cox (Biochemical Recurrence, OS.time Censoring)
+Skip policy: skip folds with ConvergenceWarning; timeouts/failures use quick fallback LASSO.
+-------------------------------------------------------------------------------------------
+Total patients with usable recurrence info: 11
+Total genes pre-selection: 60660
+Usable folds contributing risk scores: 9
+Unique features selected across usable folds: 91
+Stability threshold: 2 folds
+Stable features: 15
+
+Recurrence time construction:
+* If days_to_first_biochemical_recurrence present, used as event time.
+* If biochemical_recurrence = 0 or missing, recurrence-free time censored at OS.time.
+* If biochemical_recurrence = 1 but recurrence time missing, sample dropped.

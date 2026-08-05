@@ -1,0 +1,13 @@
+LIHC Black Cohort – 5-Fold LASSO + Cox (60s timeout per fold)
+-------------------------------------------------------------
+Total patients: 5
+Total genes pre-selection: 60660
+Unique features selected across usable folds: 31
+Frequency threshold for stability: 1 folds
+Stable (high-frequency) features: 31
+
+Interpretation:
+* Each fold attempts LASSO feature selection on ~80% of the patients (4 of 5), then fits Cox PH on those features.
+* If LASSO did not finish within 60 seconds, produced a convergence warning, or crashed, that fold was skipped.
+* Remaining folds generated out-of-fold Cox risk scores (RiskScore_OutOfFold) for held-out patients.
+* Stable features are those repeatedly selected across multiple usable folds, despite extreme n=5.

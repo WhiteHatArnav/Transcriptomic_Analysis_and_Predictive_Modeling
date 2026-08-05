@@ -1,0 +1,26 @@
+PCA / Synthetic Sample Guidance Summary (LIHC Black Cohort)
+--------------------------------------------------
+Number of real Black samples used (after QC): 5
+Number of genes (features) used after variance filter: 34676
+
+Explained variance by first 5 PCs (%):
+  PC1: 34.45%
+  PC2: 28.42%
+  PC3: 20.80%
+  PC4: 16.34%
+  PC5: 0.00%
+Cumulative variance (first 5 PCs): 100.00%
+
+Estimated number of clusters in Black samples (k-means elbow): 5
+Cluster sizes: {0: 1, 1: 1, 2: 1, 3: 1, 4: 1}
+Outlier fraction (>3 SD Mahalanobis): 0.00%
+
+Heuristic oversampling guidance:
+- We can plausibly generate up to ~1.00x total samples relative to our 5 real samples without overwhelming the covariance structure.
+- That corresponds to adding approximately 0 synthetic samples before the representation may start to distort.
+
+Interpretation notes:
+* If the PC1/PC2 plots show a single compact cluster, synthetic augmentation near that region is likely valid.
+* If multiple sub-clusters exist, oversampling should be done within each cluster separately.
+* Outliers should be examined carefully before inclusion in data augmentation.
+* After augmentation, rerunning LASSO-Cox and verifying convergence and stability is essential.
