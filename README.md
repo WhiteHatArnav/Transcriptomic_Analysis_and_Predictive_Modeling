@@ -1,4 +1,4 @@
-# Dissertation Transcriptomic Survival Modeling
+# Race-Stratified Transcriptomic Analysis and Prognostic Modeling Across Multiple Cancers
 
 ## Overview
 
