@@ -75,6 +75,56 @@ Generalized configuration-driven transcriptomic analysis pipeline developed from
 
 Raw TCGA datasets are not distributed within this repository and should be obtained directly from the original data providers using the sample ID list available in the base folder of this repository.
 
+## Downloading TCGA Data
+
+The transcriptomic and clinical datasets analyzed in this study were obtained from The Cancer Genome Atlas (TCGA) through the National Cancer Institute (NCI) Genomic Data Commons (GDC).
+
+### Step 1. Install the GDC Data Transfer Tool
+
+Download and install the GDC Data Transfer Tool from:
+
+https://gdc.cancer.gov/access-data/gdc-data-transfer-tool
+
+Verify that the installation was successful by running:
+
+```bash
+gdc-client --version
+```
+
+### Step 2. Download the desired TCGA cohort
+
+1. Navigate to the GDC Data Portal:
+
+   https://portal.gdc.cancer.gov/
+
+2. Search for the desired TCGA project (e.g., TCGA-BRCA, TCGA-LUAD, TCGA-LIHC, or TCGA-PRAD).
+
+3. Apply any desired filters (data type, workflow type, experimental strategy, etc.).
+
+4. Add the selected files to the cart.
+
+5. Export the cart as a manifest file (typically named `gdc_manifest.txt`).
+
+### Step 3. Download the data
+
+Using the terminal, navigate to the directory where the manifest file was saved and execute:
+
+```bash
+gdc-client download -m gdc_manifest.txt
+```
+
+This command downloads all files listed in the manifest while preserving the standard GDC directory structure.
+
+### Step 4. Organize the downloaded files
+
+Move or copy the downloaded files into the corresponding cancer-specific directories used throughout this repository. The scripts assume that:
+
+- the original GDC directory hierarchy is preserved,
+- TCGA sample identifiers remain unchanged, and
+- no downloaded filenames are modified.
+
+Once the data have been downloaded and organized, the preprocessing, differential expression, functional enrichment, and predictive modeling scripts in this repository can be executed in sequence.
+
 ## Software Environment
 
 - Python
