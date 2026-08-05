@@ -29,7 +29,7 @@ def run_and_stream(script_path):
         log.write(f"\n[{timestamp()}] STARTING: {script_path}\n")
 
         process = subprocess.Popen(
-            [sys.executable, "-u", script_path],  # 🔥 UNBUFFERED MODE
+            [sys.executable, "-u", script_path],  
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             text=True,
