@@ -1,8 +1,0 @@
-pandas
-numpy
-tqdm
-scikit-learn
-lifelines
-pyyaml
-gprofiler-official
-matplotlib

@@ -1,9 +1,0 @@
-PRAD Black Cohort – 10-Fold LASSO + Cox
-Skip policy: ONLY skip if a ConvergenceWarning occurred; timeouts use a quick fallback LASSO.
--------------------------------------------------------------------------
-Total patients: 11
-Total genes pre-selection: 60660
-Usable folds contributing risk scores: 6
-Unique features selected across usable folds: 232
-Stability threshold: 2 folds
-Stable features: 36
