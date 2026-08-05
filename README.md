@@ -82,11 +82,9 @@ Raw TCGA datasets are not distributed within this repository and should be obtai
 
 Major analytical components include DESeq2, DAVID, Kaplan–Meier survival analysis, Cox proportional hazards modeling, LASSO regularization, and principal component analysis.
 
-## Dissertation
-
-This repository accompanies the doctoral dissertation submitted to the Department of Computational Science at The University of Texas at El Paso in partial fulfillment of the requirements for the degree of Doctor of Philosophy.
 
 **Author:** Arnav Joshi
 **Program:** Doctoral Program in Computational Science
+**Supported by:** Cancer Prevention and Research Institute of Texas (CPRIT)
 **Institution:** The University of Texas at El Paso
 **Year:** 2026
